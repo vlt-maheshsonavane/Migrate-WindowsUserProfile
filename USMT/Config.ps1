@@ -1,7 +1,7 @@
 # Default configuration options - make edits here
 
 # Default domain to use for profile creation
-$DefaultDomain = 'DOMAIN'
+$DefaultDomain = 'veralto.org'
 
 # Default accounts to exclude from migration in the form of "Domain\UserName"
 $DefaultExcludeProfile = @(
@@ -111,10 +111,10 @@ $HidePowershellWindow = $true
 $EFSHandling = "abort"
 
 # Users to additionally send every migration result to
-$DefaultEmailEnabled = $false
-$DefaultEmailSender = 'MigrationAlert@company.com'
-$DefaultEmailRecipients = @('my.email@company.com')
-$DefaultSMTPServer = 'smtp.domain.local'
+$DefaultEmailEnabled = $true
+$DefaultEmailSender = 'MigrationAlert@veralto.com'
+$DefaultEmailRecipients = @('mahesh.sonavane@veralto.com')
+$DefaultSMTPServer = 'relay.veralto.org'
 
 # LastLogin query when gathering profiles - disabling will speed up profile search
 $QueryLastLogon = $false
